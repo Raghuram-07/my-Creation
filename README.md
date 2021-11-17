@@ -1,2 +1,2 @@
 # my-Creation
-A good start for SQl
+A good start for SQL
