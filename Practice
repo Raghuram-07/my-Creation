@@ -1,0 +1,35 @@
+Return the fist_name and email of female that works in tool department having salary greater than 110,000??
+
+Query:
+SELECT first_name, email
+FROM employees
+WHERE department = 'Tools'
+AND salary > 110000
+AND gender = 'F';
+
+Return the fist_name and hire_date of those employees who earns more than 165,000 as well as those emp that work in sports dept and also to be men??
+
+Query:
+SELECT first_name, hire_date
+FROM employees
+WHERE salary > 165000
+OR (department = 'Sports'
+AND gender = 'M')
+
+Return the fist_name and hire_date of those employees who were hired during jan 1st 2002 and jan 1st 2004??
+
+Query:
+SELECT first_name, hire_date
+FROM employees
+WHERE hire_date BETWEEN '2002-01-01' AND '2004-01-01'
+
+Return the male employees who work in automotive dept and earn more than 40,000 and less than 100,000 as well as female that work in toy dept??
+
+Query:
+SELECT *
+FROM employees
+WHERE department = 'Automotive'
+AND salary > 40000
+AND salary < 100000
+AND gender = 'M'
+OR (department = 'Toy' AND gender = 'F')
